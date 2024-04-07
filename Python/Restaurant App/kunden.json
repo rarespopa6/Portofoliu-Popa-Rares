@@ -1,0 +1,34 @@
+{
+    "Johann": {
+        "id": 40,
+        "adresse": "Zentrum 2"
+    },
+    "Hofmann": {
+        "id": 34,
+        "adresse": "Frankfurterstr. 2"
+    },
+    "Ges": {
+        "id": 63,
+        "adresse": "Strassen2"
+    },
+    "Tom": {
+        "id": 15,
+        "adresse": "A-street"
+    },
+    "Lukas": {
+        "id": 91,
+        "adresse": "Zentrale"
+    },
+    "Jack": {
+        "id": 82,
+        "adresse": "Hermann 23"
+    },
+    "Denis": {
+        "id": 94,
+        "adresse": "Hoff 2"
+    },
+    "Fass": {
+        "id": 83,
+        "adresse": "Gsd 2"
+    }
+}

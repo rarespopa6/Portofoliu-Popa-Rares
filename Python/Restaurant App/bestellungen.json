@@ -1,0 +1,210 @@
+{
+    "Johann": {
+        "adresse": "Zentrum 2",
+        "essen": [
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Ton": {
+                    "cod": "2",
+                    "pret": "50",
+                    "cantitate": "350g",
+                    "timp_p": "24"
+                }
+            }
+        ],
+        "getranke": [
+            {
+                "Vin": {
+                    "cod": "106",
+                    "pret": "20",
+                    "portie": "350ml",
+                    "timp_p": "3",
+                    "alcool": "15"
+                }
+            },
+            {
+                "Rom": {
+                    "cod": "107",
+                    "pret": "25",
+                    "portie": "350ml",
+                    "timp_p": "2",
+                    "alcool": "40"
+                }
+            },
+            {
+                "Gin": {
+                    "cod": "105",
+                    "pret": "25",
+                    "portie": "350ml",
+                    "timp_p": "3",
+                    "alcool": "40"
+                }
+            }
+        ],
+        "ora": "12:29",
+        "zubereitungszeit": "24",
+        "plata": "230"
+    },
+    "Hofmann": {
+        "adresse": "Frankfurterstrasse 105",
+        "essen": [
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Ton": {
+                    "cod": "2",
+                    "pret": "50",
+                    "cantitate": "350g",
+                    "timp_p": "24"
+                }
+            }
+        ],
+        "getranke": [
+            {
+                "Gin": {
+                    "cod": "105",
+                    "pret": "25",
+                    "portie": "350ml",
+                    "timp_p": "3",
+                    "alcool": "40"
+                }
+            },
+            {
+                "Rom": {
+                    "cod": "107",
+                    "pret": "25",
+                    "portie": "350ml",
+                    "timp_p": "2",
+                    "alcool": "40"
+                }
+            }
+        ],
+        "ora": "16:20",
+        "zubereitungszeit": "24",
+        "plata": "130"
+    },
+    "Lukas": {
+        "adresse": "Zentrum 22",
+        "essen": [
+            {
+                "Ton": {
+                    "cod": "2",
+                    "pret": "50",
+                    "cantitate": "350g",
+                    "timp_p": "24"
+                }
+            },
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Ton": {
+                    "cod": "2",
+                    "pret": "50",
+                    "cantitate": "350g",
+                    "timp_p": "24"
+                }
+            }
+        ],
+        "getranke": [
+            {
+                "Gin": {
+                    "cod": "105",
+                    "pret": "25",
+                    "portie": "350ml",
+                    "timp_p": "3",
+                    "alcool": "40"
+                }
+            },
+            {
+                "Gin": {
+                    "cod": "105",
+                    "pret": "25",
+                    "cantitate": "350g",
+                    "timp_p": "3",
+                    "alcool": "40"
+                }
+            }
+        ],
+        "ora": "15:32",
+        "zubereitungszeit": "24",
+        "plata": "210"
+    },
+    "Denis": {
+        "adresse": "Faastres 2",
+        "essen": [
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            },
+            {
+                "Pizza": {
+                    "cod": "1",
+                    "pret": "30",
+                    "cantitate": "350g",
+                    "timp_p": "23"
+                }
+            }
+        ],
+        "getranke": [
+            {
+                "Rom": {
+                    "cod": "107",
+                    "pret": "24",
+                    "portie": "350ml",
+                    "timp_p": "2",
+                    "alcool": "40"
+                }
+            }
+        ],
+        "ora": "23:11",
+        "zubereitungszeit": "23",
+        "plata": "114"
+    }
+}
