@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+<div class="top">
+    <p class="title">QR Code Generator</p>
+    <p class="subtitle">Enter the URL down below and generate your QR.</p>
+</div>
+
+<div class="middle">
+    <div class="container">
+        <form action="/submit" method="post" class="container-item">
+            <label class="form-items form-lbl">Enter the URL down below</label>
+            <input type="text" name="url">
+            <input type="submit" value="Generate QR Code" class="submit-button">
+        </form>
+        <% if (!locals.url){ %>
+            <img class="photo" src="/imgs/no-image-icon.png" alt="qr-img">
+        <% }else{ %>
+            <div class="img-link">
+                <img class="photo" src="/imgs/qr_img.png" alt="qr-img">
+                <a href="/download" class="download-link">Download QR Code</a>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs")  %> 

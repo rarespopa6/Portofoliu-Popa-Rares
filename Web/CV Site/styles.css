@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    background-color: #DAC0A3;
+}
+
+h1{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vph;
+}
+
+#profile-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.title{
+    font-size: 44px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.top{
+    padding-top: 20px;
+    background-color: #102C57;
+    margin: 0;
+    height: 500px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn{
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 20%;
+    border-color: black;
+    color: #FEFAF6;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.left{
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+#middle{
+    margin: 0;
+    height: 500px;
+    background-color: #DAC0A3;
+}
+
+.underline-crem{
+    text-decoration: underline bisque;
+}
+
+.subtitle{
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.ab-me{
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+}
+
+.proff-part{
+    margin: 0;
+    background-color: #102C57;
+}
+
+.ppc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1250px){
+    #middle{
+        height: fit-content;
+    }
+}
+
+.crem{
+    color: #FEFAF6
+}
+
+.parcurs-proff{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    width: 900px;
+    height: 1500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    margin-bottom: 50px;
+    background-color: #EADBC8;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-items: start;
+}
+
+.big{
+    font-size: 20px;
+}
+
+.git{
+    padding: 20px;
+    text-align: center;
+}
+
+.github-portf{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.parcurs-items{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.attr{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+.educatie-formare .attr {
+    align-self: flex-start; 
+}
+
+.educatie-formare{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.educatie-formare-items{
+    margin: 5px;
+    justify-self: left;
+}
+
+#contact{
+    background-color: #DAC0A3;
+    margin: 0;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-items {
+    display: flex;
+    justify-content: space-between; 
+    text-align: center; 
+    width: 300px; 
+}
+
+.logo-items a {
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    display: inline-block; 
+    padding: 10px; 
+    text-decoration: none; 
+    margin-bottom: 30px;
+}
+
+.animated-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+.animated-link:hover {
+    transform: scale(1.1);
+}
+  
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
