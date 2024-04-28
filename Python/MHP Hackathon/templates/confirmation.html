@@ -1,0 +1,62 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% include "header.html" %}
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/laptop-reg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <span class="subheading">Start booking right now.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        {% if current_user.id not in users_who_reserved: %}
+        <p style="margin-left: 160px">
+          Want to book a table or a room?
+        </p>
+        <p style="margin-left: 90px">
+          Check the availability and choose your favorite seat.
+        </p>
+        {% else %}
+        <p style="margin-left: 160px">
+          You have already booked a seat. Can not book twice.
+        </p>
+        {% endif %}
+      </div>
+      <div class="container">
+        <img src="static/assets/img/harta_buna.jpeg" alt="Harta" class="imagine">
+        {% for seat in seats: %}
+        {% if seat.id in clear_seats %}
+        {% if current_user.id not in users_who_reserved: %}
+        <a class="button button{{ seat.id }}" href="{{ url_for('reservation', btn_id=seat.id) }}">{{ seat.id }}</a>
+        {% else %}
+        <a class="button button{{ seat.id }}" style="pointer-events: none">{{seat.id}}</a>
+        {% endif %}
+        {% else %}
+        <a class="button button{{ seat.id }}" style="background-color: red; pointer-events: none">{{seat.id}}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <span>AI Prediction: {{ rez }}% chance of being free.</span>
+        <div class="my-5">
+          {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}

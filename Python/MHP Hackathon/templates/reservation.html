@@ -1,0 +1,36 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% include "header.html" %}
+
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/about-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>Confirm your reservation</h1>
+          <span class="subheading">You have booked the table no {{btn_id}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+          The reservation will be active once you submit your request. Finish now.
+        </p>
+        <div style="margin-left: 275px">
+        {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}

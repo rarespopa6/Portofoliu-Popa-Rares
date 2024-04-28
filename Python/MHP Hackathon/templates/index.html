@@ -1,0 +1,75 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/homebg.jpg'); height: 700px; margin-bottom: -20px;"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>Booking Manager</h1>
+          <span class="subheading">Find and book you favorite place</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div style="background-image: url(static/assets/img/main_bg2.jpg); background-size: cover; padding-top:0px; height: 600px;">
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 50px">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/assets/img/caros_1.jpg" class="d-block w-100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Easy access</h5>
+                    <p>You can easily book a place in the app</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/assets/img/caros_2.jpg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Increased productivity</h5>
+                    <p>Choose wherever you want to work in the building</p>
+                </div>
+            </div>
+        <div class="carousel-item">
+            <img src="static/assets/img/caros_3.jpg" class="d-block w-100" alt="Image 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Flexibility</h5>
+                <p>You can change your reservation anytime</p>
+            </div>
+        </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          {% if not current_user.is_authenticated: %}
+            <div class="row gx-4 gx-lg-5 justify-content-center" style="padding-top: 50px; padding-bottom: 50px">
+                <h3 style="color: white">You have to Log In in order to start booking</h3>
+            </div>
+            <a class="btn btn-light btn-lg" href="{{ url_for('login') }}" role="button">Log In</a>
+            <div style="margin-bottom: 40px;"></div>
+      </div>
+            {% else %}
+        <div>
+            <a class="btn btn-light btn-lg" href="{{ url_for('book') }}" style="margin-top:70px; margin-left:250px" role="button">Start Booking</a>
+        </div>
+    </div>
+             {% endif %}
+    </div>
+  </div>
+</div>
+</div>
+
+{% include "footer.html" %}
