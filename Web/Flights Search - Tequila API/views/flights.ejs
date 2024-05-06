@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="header">
+        <h1><%= departureCity %> - <%= arrivalCity %></h1>
+        <div id="dateRange">
+            <p class="dates"><%= departureDay %></p>  
+            <p class="dates"><%= returnDay %></p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="flights flights-departure">
+            <h2>Departure Flights</h2>
+            <% if (uniqueFlights1 && uniqueFlights1.length > 0) { %>
+                <ul class="flight-list">
+                    <% uniqueFlights1.forEach(flight => { %>
+                        <li class="flight">
+                            <div>
+                                <strong>From:</strong> <%= flight.cityFrom %> (<%= flight.flyFrom %>)<br>
+                                <strong>To:</strong> <%= flight.cityTo %> (<%= flight.flyTo %>)<br>
+                                <strong>Number of Stops:</strong> <%= flight.numStops %><br>
+                                <strong>Price:</strong> <%= flight.price %> €<br>
+                                <strong>Date:</strong> <%= departureDay %><br>
+                            </div>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p class="error">No departure flights found.</p>
+            <% } %>
+        </div>
+        <div class="flights flights-return">
+            <h2>Return Flights</h2>
+            <% if (uniqueFlights2 && uniqueFlights2.length > 0) { %>
+                <ul class="flight-list">
+                    <% uniqueFlights2.forEach(flight => { %>
+                        <li class="flight">
+                            <div>
+                                <strong>From:</strong> <%= flight.cityFrom %> (<%= flight.flyFrom %>)<br>
+                                <strong>To:</strong> <%= flight.cityTo %> (<%= flight.flyTo %>)<br>
+                                <strong>Number of Stops:</strong> <%= flight.numStops %><br>
+                                <strong>Price:</strong> <%= flight.price %> €<br>
+                                <strong>Date:</strong> <%= returnDay %><br>
+                            </div>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p class="error">No return flights found.</p>
+            <% } %>
+        </div>
+        </div>
+        <div class="back-btn">
+            <a href="/">Back to Search</a>
+        </div>
+    </div>
+</body>
+</html>

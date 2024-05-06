@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <h1>Flights checker</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="frm">
+                <p class="title">Choose your destination</p>
+                <form action="/search" method="post">
+                    <div class="departure">
+                        <label for="departureCity" class="subtitle">Departure City:</label>
+                        <select name="departureCity" id="departureCity">
+                            <option value="GHV">Brasov</option>
+                            <option value="OTP">Bucharest</option>
+                            <option value="NYC">New York</option>
+                            <option value="LAX">Los Angeles</option>
+                            <option value="SFO">San Francisco</option>
+                            <option value="CDG">Paris</option>
+                            <option value="FRA">Frankfurt</option>
+                            <option value="ORD">Chicago</option>
+                            <option value="MIA">Miami</option>
+                        </select><br>
+                    </div>
+                    <label for="arrivalCity" class="subtitle">Arrival City:</label>
+                    <select name="arrivalCity" id="arrivalCity">
+                        <option value="CLJ">Cluj-Napoca</option>
+                        <option value="LHR">London</option>
+                        <option value="CDG">Paris</option>
+                        <option value="FRA">Frankfurt</option>
+                        <option value="AMS">Amsterdam</option>
+                        <option value="MIA">Miami</option>
+                        <option value="LAX">Los Angeles</option>
+                        <option value="BCN">Barcelona</option>
+                        <option value="NYC">New York</option>
+                    </select><br>
+                    <label for="departureDate" class="subtitle">Departure Date:</label>
+                    <input type="date" name="departureDate" id="departureDate" required><br>
+                    <label for="returnDate" class="subtitle">Return Date:</label>
+                    <input type="date" name="returnDate" id="returnDate" required><br>
+                    <label for="maxStops" class="subtitle">Max Stopovers:</label>
+                    <select name="maxStops" id="maxStops">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <button type="submit">Search Flights</button>
+                </form>
+                <script>
+                    document.getElementById('departureDate').addEventListener('change', function() {
+                        var departureDate = new Date(this.value);
+                        var returnDateInput = document.getElementById('returnDate');
+                        returnDateInput.min = departureDate.toISOString().split('T')[0];
+                        if (new Date(returnDateInput.value) < departureDate) {
+                            returnDateInput.value = departureDate.toISOString().split('T')[0];
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
