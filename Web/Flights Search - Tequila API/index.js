@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 const TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com";
-const TEQUILA_API_KEY = "sfx2dO2VZfdqZbS8FwTBbzIgJhpO3pnb";
+const TEQUILA_API_KEY = API_KEY;
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
