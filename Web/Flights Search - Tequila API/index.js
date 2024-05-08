@@ -1,11 +1,10 @@
 import express from "express";
 import axios from "axios";
+import env from "dotenv";
 
 const app = express();
 const port = 3000;
-
-const TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com";
-const TEQUILA_API_KEY = API_KEY;
+env.config();
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
@@ -22,7 +21,7 @@ app.post("/search", async (req, res) => {
     try {
         const { departureCity, arrivalCity, departureDate, returnDate, maxStops } = req.body;
 
-        const response = await axios.get(`${TEQUILA_ENDPOINT}/v2/search`, {
+        const response = await axios.get(`${process.env.TEQUILA_ENDPOINT}/v2/search`, {
             params: {
                 fly_from: departureCity,
                 fly_to: arrivalCity,
@@ -35,7 +34,7 @@ app.post("/search", async (req, res) => {
                 max_stopovers: parseInt(maxStops, 10)
             },
             headers: {
-                apikey: TEQUILA_API_KEY,
+                apikey: process.env.TEQUILA_API_KEY,
             },
         });
 
@@ -54,7 +53,7 @@ app.post("/search", async (req, res) => {
         const departureDay = departureDate.toString();
         const returnDay = returnDate.toString();
 
-        const response2 = await axios.get(`${TEQUILA_ENDPOINT}/v2/search`, {
+        const response2 = await axios.get(`${process.env.TEQUILA_ENDPOINT}/v2/search`, {
             params: {
                 fly_from: arrivalCity,
                 fly_to: departureCity,
@@ -67,7 +66,7 @@ app.post("/search", async (req, res) => {
                 max_stopovers: parseInt(maxStops, 10)
             },
             headers: {
-                apikey: TEQUILA_API_KEY,
+                apikey: process.env.TEQUILA_API_KEY,
             },
         });
 
