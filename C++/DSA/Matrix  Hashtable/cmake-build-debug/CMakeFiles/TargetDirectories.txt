@@ -1,0 +1,3 @@
+C:/Users/rares/CLionProjects/DSA/Lab 4 Matrix/cmake-build-debug/CMakeFiles/Lab_4_Matrix.dir
+C:/Users/rares/CLionProjects/DSA/Lab 4 Matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rares/CLionProjects/DSA/Lab 4 Matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir

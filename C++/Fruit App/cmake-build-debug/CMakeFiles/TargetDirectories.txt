@@ -1,0 +1,3 @@
+C:/Users/rares/CLionProjects/OOP/Laboratoare/Lab4_smartp/cmake-build-debug/CMakeFiles/Lab4.dir
+C:/Users/rares/CLionProjects/OOP/Laboratoare/Lab4_smartp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rares/CLionProjects/OOP/Laboratoare/Lab4_smartp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

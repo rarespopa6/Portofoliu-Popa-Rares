@@ -1,0 +1,8 @@
+# ninja log v5
+4	557	7376632955956444	CMakeFiles/Lab_4_Matrix.dir/Matrix2.cpp.obj	f12411892ab707f6
+16	573	7376628615296910	CMakeFiles/Lab_4_Matrix.dir/ShortTest.cpp.obj	a062ae7cd0a56371
+564	703	7376646502686342	Lab_4_Matrix.exe	264d91b548825e1e
+4	564	7376646501356200	CMakeFiles/Lab_4_Matrix.dir/Matrix.cpp.obj	f9f9d536a64dae16
+5	617	7376632443046178	CMakeFiles/Lab_4_Matrix.dir/App.cpp.obj	24204d0d8446cc20
+16	708	7376624986188780	CMakeFiles/Lab_4_Matrix.dir/ExtendedTest.cpp.obj	2bb5756818366556
+1	236	7376653603643918	build.ninja	eea9040905edec40

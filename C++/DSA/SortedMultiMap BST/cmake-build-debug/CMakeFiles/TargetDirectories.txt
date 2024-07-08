@@ -1,0 +1,3 @@
+C:/Users/rares/CLionProjects/DSA/Lab 5 SMM/cmake-build-debug/CMakeFiles/Lab_5_SMM.dir
+C:/Users/rares/CLionProjects/DSA/Lab 5 SMM/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rares/CLionProjects/DSA/Lab 5 SMM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
