@@ -1,0 +1,4 @@
+id,text,a,b,c,d,correct
+0,What is the capital of France?,Berlin,Madrid,Paris,Lisbon,c
+1,What is 2 + 2?,3,4,5,6,b
+2,Where is Romania located?,Europe,Asia,North America,Oceania,a

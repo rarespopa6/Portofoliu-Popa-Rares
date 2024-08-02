@@ -74,7 +74,7 @@ passport.use(new LocalStrategy(
           }
         });
       } else {
-        return done(null, false, { message: "Utilizatorul nu a fost găsit" });
+        return done(null, false, { message: "User not found. Register first." });
       }
     } catch (err) {
       console.error(err);
