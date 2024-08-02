@@ -44,7 +44,7 @@ public class QuizApp extends Application {
     public void start(Stage primaryStage) {
         this.stage = primaryStage;
 
-        // Configurarea interfeței grafice
+        // GUI
         VBox root = new VBox(20);
         root.setStyle("-fx-padding: 20; -fx-alignment: center;");
         root.getChildren().addAll(startButton);
@@ -67,7 +67,7 @@ public class QuizApp extends Application {
         currentQuestionIndex = 0;
         scoreLabel.setText("");
 
-        // Configurarea UI pentru întrebări
+        // GUI
         VBox root = new VBox(10);
         root.setStyle("-fx-padding: 20; -fx-alignment: center;");
         HBox optionsBox = new HBox(10);
@@ -76,7 +76,7 @@ public class QuizApp extends Application {
 
         root.getChildren().addAll(questionLabel, optionsBox, scoreLabel, playAgainButton);
         Scene scene = new Scene(root, 400, 300);
-        stage.setScene(scene); // Folosește câmpul Stage
+        stage.setScene(scene);
         showQuestion(currentQuestions.get(currentQuestionIndex));
     }
 
@@ -109,7 +109,6 @@ public class QuizApp extends Application {
         optionC.setVisible(true);
         optionD.setVisible(true);
 
-        // Adaugă un listener pentru opțiunile selectate, dacă nu există deja
         if (optionsGroup.selectedToggleProperty().get() == null) {
             optionsGroup.selectedToggleProperty().addListener((obs, oldToggle, newToggle) -> {
                 if (newToggle != null && !isAnswering) {
