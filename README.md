@@ -1,12 +1,12 @@
 ## 🌟 Featured Projects  
 
-1. **[AVX Online Shop](https://github.com/rarespopa6/Portofoliu-Popa-Rares)**  
+1. **[AVX Online Shop](https://github.com/rarespopa6/Portofoliu-Popa-Rares/tree/main/Web/AVX%20Online%20Shop)**  
    A full-featured e-commerce application designed to deliver a seamless shopping experience. Key features include product management, shopping cart functionality, and payment integrations.  
 
-2. **[EveX - Ticketing Site](https://github.com/rarespopa6/Portofoliu-Popa-Rares)**  
+2. **[EveX - Ticketing Site](https://github.com/rarespopa6/Portofoliu-Popa-Rares/tree/main/Web/EveX%20(React%20-%20SpringBoot%20Microservices))**  
    A modern platform for event ticketing, providing streamlined event discovery and ticket purchasing.  
 
-3. **[Booking Manager](https://github.com/rarespopa6/Portofoliu-Popa-Rares)** *(MHP Porsche Hackathon 2024)*  
+3. **[Booking Manager](https://github.com/rarespopa6/Portofoliu-Popa-Rares/tree/main/Python/MHP%20Hackathon)** *(MHP Porsche Hackathon 2024)*  
    A web application designed for employees to book a seat at the office before coming to work. Built during the MHP Porsche Hackathon 2024.  
 
 ---
